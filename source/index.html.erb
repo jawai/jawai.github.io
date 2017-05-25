@@ -1,0 +1,56 @@
+---
+pageable: true
+per_page: 10
+---
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Jason Wai
+      </h1>
+      <h2 class="subtitle">
+        A blog about eating Unicorns
+      </h2>
+    </div>
+  </div>
+</section>
+
+<div>
+  <% if paginate && num_pages > 1 %>
+    <p>Page <%= page_number %> of <%= num_pages %></p>
+
+    <% if prev_page %>
+      <p><%= link_to 'Previous page', prev_page %></p>
+    <% end %>
+  <% end %>
+</div>
+
+<% page_articles.each_with_index do |article, i| %>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <p class="subtitle">
+          <h2><span><%= article.date.strftime('%e %b %Y') %></span></h2>
+        </p>
+        <h2 class="title">
+          <%= link_to article.title, article %>
+        </h2>
+      </div>
+      <div class="column is-8">
+        <div class="content">
+          <%= article.body %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+
+<div>
+  <% if paginate %>
+    <% if next_page %>
+      <p><%= link_to 'Next page', next_page %></p>
+    <% end %>
+  <% end %>
+</div>

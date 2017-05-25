@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <!-- Include jQuery -->
+    <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" %>
+    <!-- Include Bulma -->
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" %>
+    <!-- Include Font Awesome -->
+    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+    <%= javascript_include_tag "bulma" %>
+  </head>
+  <body>
+    <%= partial "header" %>
+
+    <%= yield %>
+
+    <%= partial "footer" %>
+  </body>
+</html>
