@@ -69,19 +69,22 @@ page '/*.txt', layout: false
 #     'Helping'
 #   end
 # end
+activate :relative_assets
+set :relative_links, true
+
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  # Optional Settings
-  # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
-  # deploy.branch   = 'custom-branch' # default: gh-pages
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-  # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+  deploy.build_before = true
 end
 
+# Build-specific configuration
 configure :build do
-   activate :minify_css
-   activate :asset_hash
-   activate :minify_javascript
-   activate :css
-   activate :gzip
+  # Minify CSS on build
+  activate :minify_css
+
+  # Minify Javascript on build
+  activate :minify_javascript
+
+  # Minify HTML on build
+  activate :minify_html
 end

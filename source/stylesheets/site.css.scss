@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+//Bar background color
+.nav {
+  background-color: yellow;
+}
+
+//Bar item color
+.nav-item a, a.nav-item {
+  color: white;
+}
+
+//Bar hover items
+.nav-item a:hover, a.nav-item:hover {
+  color: green;
+}
+
+//a:hover {
+  //color: green;
+//}
+
+//Toggle button hover color
+.nav-toggle:hover {
+    background-color: #f5f5f5;
+}
+
+//Drop down color
+@media screen and (max-width: 768px) {
+  .nav-menu.nav-right {
+      background-color: blue;
+  }
+}
