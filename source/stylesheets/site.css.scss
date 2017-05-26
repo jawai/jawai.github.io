@@ -65,19 +65,28 @@ body {
   font-size: 1.5em !important;
 }
 
+.title3 {
+  margin-top: 5%;
+}
+
 .subtitle {
   font-family: 'Nobile', sans-serif;
   font-size: 1.5em;
 }
 
 .subtitle2 {
-  font-size: 1em !important;
+  margin-top: 2%;
+  font-size: 0.75em !important;
 }
 
 a {
-  color: #23d160;
+  color: #333;
+  //#23d160;
   //#3273dc;
-    //color: #333;
+}
+
+a:hover {
+  color: #23d160;
 }
 
 .fa-2x {
