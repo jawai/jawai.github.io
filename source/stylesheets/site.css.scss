@@ -3,7 +3,7 @@
 ///*** Body ***///
 body {
   font-family: 'Arvo', serif;
-  font-size: 1.5em;
+  font-size: 1.15em;
 }
 
 
@@ -57,13 +57,21 @@ body {
 ///*** body ***///
 .title {
   font-family: 'Questrial', sans-serif;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: bold;
+}
+
+.title2 {
+  font-size: 1.5em !important;
 }
 
 .subtitle {
   font-family: 'Nobile', sans-serif;
   font-size: 1.5em;
+}
+
+.subtitle2 {
+  font-size: 1em !important;
 }
 
 a {
