@@ -1,27 +1,29 @@
 <% wrap_layout :layout do %>
 
-<div class="hero-body">
-  <div class="container has-text-centered">
-    <% if paginate && num_pages > 1 %>
-      <p>Page <%= page_number %> of <%= num_pages %></p>
+<p class="back-home"><%= link_to"<i class=\"fa fa-long-arrow-left fa-lg\"></i> Back to Home", "../index.html", :class => 'read-more' %></p>
+<hr class="is-marginless">
 
-      <% if prev_page %>
-        <p><%= link_to 'Previous page', prev_page %></p>
-      <% end %>
-    <% end %>
-
-    <% page_articles.each_with_index do |article, i| %>
-      <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-      <!-- use article.summary(250) if you have Nokogiri available to show just
-           the first 250 characters -->
-      <%= article.body %>
-    <% end %>
-
-    <% if paginate %>
-      <% if next_page %>
-        <p><%= link_to 'Next page', next_page %></p>
-      <% end %>
-    <% end %>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-2">
+      </div>
+      <div class="column is-8">
+        <div class="content">
+          <h4 class="subtitle subtitle2">
+            <span><%= current_article.date.strftime('%e %b %Y') %></span>
+          </h4>
+          <h2 class="title title2">
+            <%= current_article.title %>
+          </h2>
+          <p>
+            <%= current_article.body %>
+          </p>
+        </div>
+      </div>
+      <div class="column is-2">
+      </div>
+    </div>
   </div>
 </div>
 

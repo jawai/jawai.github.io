@@ -10,10 +10,15 @@ body {
 ///*** Header ***///
 //Bar background color
 .nav {
-  background-color: #3273dc;
+  background: url(../images/navbg1.png);
+  //background-color: #3273dc;
   font-weight: bold;
   height: 4.25rem;
   font-size: 1.5em;
+  //position: fixed !important; for fixed nav
+  //top: 0;
+  //left: 0;
+  //right: 0;
 }
 
 //Bar item color
@@ -36,7 +41,8 @@ body {
 
 //Toggle button hover color
 .nav-toggle:hover {
-  background-color: #3273dc;
+  background: url(../images/navbg1.png);
+  //background-color: #3273dc;
 }
 
 //Toggle span three line
@@ -49,7 +55,7 @@ body {
 //Drop down color
 @media screen and (max-width: 768px) {
   .nav-menu.nav-right {
-    background-color: #3273dc;
+    background: url(../images/navbg1.png);
   }
 }
 
@@ -61,8 +67,14 @@ body {
   font-weight: bold;
 }
 
-.title2 {
-  font-size: 1.5em !important;
+.title2 a {
+  font-size: 0.8em !important;
+  color: #6e5eb2 !important; // dark purple
+  font-weight: bold;
+}
+
+.title2 a:hover {
+  color: #a399cd !important; //light purple
 }
 
 .title3 {
@@ -72,12 +84,19 @@ body {
 .subtitle {
   font-family: 'Nobile', sans-serif;
   font-size: 1.5em;
+  color: #8F8E96;
+  //#666
 }
 
 .subtitle2 {
   margin-top: 2%;
   font-size: 0.75em !important;
+  color: #8F8E96 !important;
 }
+
+//.main-hero {
+  //margin-top: 100px;
+// for sticky nav}
 
 a {
   color: #333;
@@ -86,11 +105,17 @@ a {
 }
 
 a:hover {
-  color: #23d160;
+  color: #a399cd !important; //light purple
 }
 
-.fa-2x {
-  font-size: 2em !important;
+.fa-bigger {
+  font-size: 1.5em !important;
+}
+
+.read-more {
+  font-size: 0.75em !important;
+  font-weight: bold;
+  color: #a399cd !important; //light purple
 }
 
 //*** FOOTER ***//
@@ -98,6 +123,15 @@ footer .content {
   text-align: left;
 }
 
-#footer-c {
+.footer-c {
   text-align: center;
+}
+
+
+
+
+
+
+.back-home {
+  margin-top: 25px;
 }

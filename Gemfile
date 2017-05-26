@@ -9,7 +9,6 @@ gem 'middleman-livereload'
 gem "middleman-blog", "~> 4.0"
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'middleman-minify-html'
-gem 'nokogiri'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 

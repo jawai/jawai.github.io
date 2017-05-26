@@ -9,6 +9,7 @@ end
 # https://middlemanapp.com/basics/layouts/
 activate :blog do |blog|
   blog.sources = "posts/:year-:title.html"
+  blog.layout = "layouts/blog_layout"
   #blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   #blog.layout = "layouts/blog-layout"
   # This will add a prefix to all links, template references and source paths
