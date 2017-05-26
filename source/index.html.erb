@@ -2,34 +2,45 @@
 pageable: true
 per_page: 10
 ---
-<section class="hero is-info">
+<section class="hero">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title">
-        Jason Wai
+        Jason Wai.
       </h1>
       <h2 class="subtitle">
-         A blog about eating unicorns
+         A blog about eating unicorns.
       </h2>
     </div>
   </div>
 </section>
 
+<div>
+  <% if paginate && num_pages > 1 %>
+    <p>Page <%= page_number %> of <%= num_pages %></p>
+
+    <% if prev_page %>
+      <p><%= link_to 'Previous page', prev_page %></p>
+    <% end %>
+  <% end %>
+</div>
+
 <div class="section">
   <div class="container">
     <div class="columns">
       <div class="column is-8">
+        <% page_articles.each_with_index do |article, i| %>
         <div class="content">
           <hr class="is-marginless">
           <h2 class="title">
-            Blog hr
+            <strong><%= link_to article.title, article %></strong>
           </h2>
           <h4 class="subtitle">
-            First Article Post
+            <span><%= article.date.strftime('%e %b %Y') %></span>
           </h4>
-          <p>Blah blah blah</p>
-          <p>More blah blah blah blah blah</p>
+          <p><%= article.body %></p>
         </div>
+        <% end %>
       </div>
       <div class="column is-4">
         <div class="content">
@@ -46,72 +57,6 @@ per_page: 10
 </div>
 
 <section></section>
-
-<div class="tile is-ancestor">
-  <div class="tile is-vertical is-8">
-    <div class="tile">
-      <div class="tile is-parent is-vertical">
-        <article class="tile is-child notification is-primary">
-          <p class="title">Top Left</p>
-          <p class="subtitle">Top tile</p>
-        </article>
-        <article class="tile is-child notification is-warning">
-          <p class="title">...tiles</p>
-          <p class="subtitle">Bottom tile</p>
-        </article>
-      </div>
-    </div>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-success">
-      <div class="content">
-        <p class="title">Tall tile</p>
-        <p class="subtitle">With even more content</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-
-<div>
-  <% if paginate && num_pages > 1 %>
-    <p>Page <%= page_number %> of <%= num_pages %></p>
-
-    <% if prev_page %>
-      <p><%= link_to 'Previous page', prev_page %></p>
-    <% end %>
-  <% end %>
-</div>
-
-<% page_articles.each_with_index do |article, i| %>
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-4">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-8">
-        <p class="subtitle">
-          <h2><span><%= article.date.strftime('%e %b %Y') %></span></h2>
-        </p>
-        <h2 class="title is-large">
-          <strong><%= link_to article.title, article %></strong>
-        </h2>
-        <div class="content">
-          <%= article.body %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<% end %>
 
 <div>
   <% if paginate %>
