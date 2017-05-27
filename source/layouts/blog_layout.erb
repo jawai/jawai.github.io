@@ -10,6 +10,7 @@
       </div>
       <div class="column is-8">
         <div class="content">
+          <img class="img-post" src="<%= current_article.data.thumbnail_image %>">
           <h4 class="subtitle subtitle2">
             <span><%= current_article.date.strftime('%e %b %Y') %></span>
           </h4>
@@ -26,5 +27,4 @@
     </div>
   </div>
 </div>
-
 <% end %>

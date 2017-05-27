@@ -60,7 +60,7 @@ body {
 }
 
 
-///*** body ***///
+///*** Body ***///
 .title {
   font-family: 'Questrial', sans-serif;
   font-size: 2em;
@@ -118,7 +118,27 @@ a:hover {
   color: #a399cd !important; //light purple
 }
 
-//*** FOOTER ***//
+//img[src$='#img-thumbnail'] {
+//  display: block;
+//  border-radius: 50%;
+//  border: 10px solid #f2f1f2;
+//  width: 50%;
+//  height: 50%;
+//  margin-left: auto !important;
+//  margin-right: auto !important;
+//}
+
+.img-thumbnail {
+  display: block;
+  border-radius: 50%;
+  border: 10px solid #f2f1f2;
+  width: 40%;
+  height: 40%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+///*** FOOTER ***///
 footer .content {
   text-align: left;
 }
@@ -129,8 +149,18 @@ footer .content {
 
 
 
-
+///*** Article details section ***///
 
 .back-home {
   margin-top: 25px;
+}
+
+.img-post {
+  display: block;
+  border-radius: 50%;
+  border: 10px solid #f2f1f2;
+  width: 50%;
+  height: 50%;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
