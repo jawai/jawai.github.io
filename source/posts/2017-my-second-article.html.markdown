@@ -7,6 +7,7 @@ thumbnail_image: https://octodex.github.com/images/yaktocat.png
 #<a href="/2017/05/21/my-second-article.html">
 #  <img src="https://octodex.github.com/images/yaktocat.png#img-thumbnail" alt="github-thing">
 #</a>
+category: css3
 ---
 
 [comment]: <> (![alt](src#img-thumbnail))

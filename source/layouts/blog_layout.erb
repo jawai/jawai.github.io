@@ -1,8 +1,5 @@
 <% wrap_layout :layout do %>
 
-<p class="back-home"><%= link_to"<i class=\"fa fa-long-arrow-left fa-lg\"></i> Back to Home", "../index.html", :class => 'read-more' %></p>
-<hr class="is-marginless">
-
 <div class="section">
   <div class="container">
     <div class="columns">
@@ -11,6 +8,7 @@
       <div class="column is-8">
         <div class="content">
           <img class="img-post" src="<%= current_article.data.thumbnail_image %>">
+          <p class="back-home"><%= link_to"<i class=\"fa fa-long-arrow-left fa-lg\"></i> Back to Home", "../index.html", :class => 'read-more' %></p>
           <h4 class="subtitle subtitle2">
             <span><%= current_article.date.strftime('%e %b %Y') %></span>
           </h4>

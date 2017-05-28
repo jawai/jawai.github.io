@@ -84,7 +84,7 @@ body {
 .subtitle {
   font-family: 'Nobile', sans-serif;
   font-size: 1.5em;
-  color: #8F8E96;
+  color: #8F8E96; //gray
   //#666
 }
 
@@ -153,6 +153,7 @@ footer .content {
 
 .back-home {
   margin-top: 25px;
+  text-align: center;
 }
 
 .img-post {
@@ -163,4 +164,16 @@ footer .content {
   height: 50%;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+
+///*** Categories ***///
+.category-title {
+  font-size: 1.25em;
+  color: #a399cd !important; //light purple
+  font-weight: bold;
+}
+
+.category-link {
+  list-style: none !important;
 }

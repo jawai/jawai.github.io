@@ -10,6 +10,14 @@ end
 activate :blog do |blog|
   blog.sources = "posts/:year-:title.html"
   blog.layout = "layouts/blog_layout"
+
+
+  blog.custom_collections = {
+  category: {
+    link: '/categories/{category}',
+    template: '/category.html'
+    }
+  }
   #blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   #blog.layout = "layouts/blog-layout"
   # This will add a prefix to all links, template references and source paths
