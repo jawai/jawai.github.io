@@ -8,8 +8,9 @@ end
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 activate :blog do |blog|
-  blog.sources = "posts/:year-:title.html"
+  blog.sources = "posts/{year}-{title}.html"
   blog.layout = "layouts/blog_layout"
+  blog.permalink = "posts/{title}.html"
 
 
   blog.custom_collections = {
