@@ -85,9 +85,11 @@ set :relative_links, true
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  #deploy.build_before = true
+  deploy.build_before = true
   deploy.branch = 'master'
 end
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
