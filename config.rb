@@ -83,11 +83,9 @@ page '/*.txt', layout: false
 activate :relative_assets
 set :relative_links, true
 
-ignore 'CNAME'
-
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.build_before = true
+  #deploy.build_before = true
   deploy.branch = 'master'
 end
 
