@@ -3,6 +3,14 @@
   <div class="container">
     <div class="columns">
       <div class="column is-2">
+        <aside class="menu">
+          <p class="menu-label">
+            Share
+          </p>
+          <ul class="menu-list">
+            <li><a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+          </ul>
+        </aside>
       </div>
       <div class="column is-8">
         <div class="content">
@@ -19,21 +27,6 @@
           <p>
             <%= current_article.body %>
           </p>
-
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-              /* * * CONFIGURATION VARIABLES * * */
-              var disqus_shortname = 'jasonwai';
-              /* * * DON'T EDIT BELOW THIS LINE * * */
-              (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-          </div>
-
         </div>
       </div>
       <div class="column is-2">
