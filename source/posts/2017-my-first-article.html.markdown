@@ -6,7 +6,7 @@ thumbnail_image: /images/first-article/display.png
 category: Technology
 ---
 
-The three main properties of a display are its **size**, **resolution**, and **pixel density**. These properties generally dictate the cost and the sharpness of the image of the display.
+The three main properties of a display are its **size**, **resolution**, and **pixel density**. These properties generally dictate the cost of the display and the sharpness of the image on the display.
 
 The **display size** is always measured as the length of the diagonal of the screen.
 
