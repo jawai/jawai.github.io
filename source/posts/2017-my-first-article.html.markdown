@@ -1,5 +1,5 @@
 ---
-title: Displays, Resolutions, and Pixels
+title: Displays - Size, Resolution, and Pixel Density
 date: 2017-06-19 20:05 UTC
 tags:
 thumbnail_image: /images/first-article/display.png
