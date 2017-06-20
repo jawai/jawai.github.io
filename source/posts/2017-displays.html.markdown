@@ -1,6 +1,6 @@
 ---
 title: Displays - Size, Resolution, and Pixel Density
-date: 2017-06-19 20:05 UTC
+date: 2017-06-12 20:05 UTC
 tags:
 thumbnail_image: /images/first-article/display.png
 category: Technology
