@@ -138,6 +138,12 @@ a:hover {
   margin-right: auto !important;
 }
 
+///*** BLOG POSTS ***///
+
+
+
+
+
 ///*** FOOTER ***///
 footer .content {
   text-align: left;
@@ -168,6 +174,10 @@ footer .content {
   margin-right: auto !important;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 
 ///*** Categories ***///
 .category-title {
@@ -190,6 +200,17 @@ footer .content {
   font-size: 3em;
   font-weight: bold;
 }
+
+.subtitle-about-main {
+  font-family: 'Arvo', serif;
+  //'Questrial', sans-serif;
+  //'Nobile', sans-serif;
+  //'Arvo', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
 
 .subtitle-about {
   font-family: 'Arvo', serif;
@@ -230,36 +251,32 @@ footer .content {
   text-align: center;
 }
 
-.is-legal {
-  background-color: #ff5732 !important;
-}
-
-.legal-about {
+.subtitle-about-interest {
   font-family: 'Arvo', serif;
   //'Questrial', sans-serif;
   //'Nobile', sans-serif;
   //'Arvo', serif;
   font-size: 1.5em;
   font-weight: bold;
-  color: #fff;
 }
 
-.is-technology {
-  background-color: #C0C0C0 !important;
+.img-about {
+  border-radius: 30%;
+  width: 750%;
+  height: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-.is-privacy {
-  background-color: #fcaa53 !important;
+.img-self {
+  display: block;
+  border-radius: 50%;
+  width: 75%;
+  height: 75%;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-.is-game {
-  background-color: #90b33d !important;
-}
-
-.is-food {
-  //background-color: #90b33d !important;
-}
-
-.is-random {
-  background-color: #000 !important;
+.interest-about {
+  text-align: center;
 }
