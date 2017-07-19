@@ -2,7 +2,7 @@
 title: Displays - Size, Resolution, and Pixel Density
 date: 2017-06-12 20:05 UTC
 tags:
-thumbnail_image: /images/first-article/display.png
+thumbnail_image: /images/article1/display.png
 category: Technology
 ---
 
@@ -16,19 +16,19 @@ The **resolution** represents the number of horizontal and vertical rows of pixe
 
 For example, if you have a 14 inch display with a resolution of 640x480, then you have a display with a diagonal length of 14inches, _horizontal resolution_ of 640 pixels, and _vertical resolution_ of 480 pixels.
 
-![resolution](/images/first-article/res.jpg)
+![resolution](/images/article1/res.jpg)
 
 Currently, the most common displays are 720p, 900p, and 1080p. The number represents the vertical resolution of the display. The _p_ stands for **progressive scan**. It represents the way the image is displayed on the screen. For example, a progressive scan display at 60hz means the image on the screen is completely refreshed 60 times per second.
 
 The alternative method of displaying an image is _i_ for **interlaced scan**. It refreshes alternative rows of pixels as the given frequency. Thus, it takes two full cycles to refresh every pixel on the screen. Progressive scan is generally better and is the more common type found on computer displays. The difference between resolutions at 720p, 920p, and 1080p can be seen below.
 
-![resolution chart](/images/first-article/res-chart.jpg)
+![resolution chart](/images/article1/res-chart.jpg)
 
 The **pixel density** represents how many pixels there are in 1 square inch of your display - pixels per inch (PPI). The higher the pixel density, the sharper and clearer the image on your display.
 
 If we had two displays of the same size, then the left image below represents a display with lower PPI compared to the image to the right.
 
-![ppi](/images/first-article/ppi.jpg)
+![ppi](/images/article1/ppi.jpg)
 
 Why does PPI matter? If you’re like most people, you spend a significant amount of time staring at some type of display – think about your phone, laptop, desktop, and TV. Also, think about your digital watch, microwave, billboard ads, self-checkout at the super market, credit card reader, etc. There are displays everywhere.
 

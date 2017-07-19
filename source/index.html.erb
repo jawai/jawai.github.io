@@ -43,7 +43,7 @@ per_page: 10
           </h2>
           <img class="img-thumbnail" src="<%= article.data.thumbnail_image %>">
           <p>
-            <%= truncate(article.body, :length => 200,  :separator => ' ') %>
+            <%= truncate(article.body, :length => 125,  :separator => ' ') %>
             <%= link_to"<i class=\"fa fa-long-arrow-right fa-lg\"></i> Read more", article, :class => 'read-more' %>
           </p>
         </div>
