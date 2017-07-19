@@ -1,0 +1,1 @@
+$(document).ready(function(){!function e(){$(".blink_me").fadeOut(500).fadeIn(500,e)}()}),function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||(o=e.createElement(n),o.id=t,o.src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");
