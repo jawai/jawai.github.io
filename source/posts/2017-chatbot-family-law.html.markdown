@@ -1,5 +1,5 @@
 ---
-title: Chatbots for Self-Represented Litigants
+title: Chatbots for Family Law
 date: 2017-08-02 04:52 UTC
 tags:
 thumbnail_image: /images/article5/chat.jpg
