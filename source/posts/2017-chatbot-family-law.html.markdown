@@ -20,7 +20,9 @@ The solutions currently out there have ranged widely. There are projects focused
 
 Today, I’m looking at using a chat bot system, leveraging AI, to provide legal information. AI technology, such as <a class="post-link" href="https://api.ai/">Api.ai</a> and <a class="post-link" href="https://wit.ai/">Wit.ai</a> - owned by Google and Facebook respectively, has become widely available for public use. These technologies were created to simplify and encourage the use of AI tech.
 
-<a class="post-link" href="https://www.motion.ai/">Motion.ai</a> makes it even simpler to allow for non-programmers to create chat bots. I’ve looked at this solution as an innovative tool for family law information and help. Motion.ai is a technology that lawyers can use (since most have no tech backgrounds) to create a widely accessible tool for anyone who has access to a computer or cell phone because it can integrate with sms, different messengers, and even email. The solution below is a simple example of a web chat bot that gives family law information on divorces and separation.
+<a class="post-link" href="https://www.motion.ai/">Motion.ai</a> makes it even simpler to allow for non-programmers to create chat bots. I’ve looked at this solution as an innovative tool for family law information and help. Motion.ai is a technology that lawyers can use (since most have no tech backgrounds) to create a widely accessible tool for anyone who has access to a computer or cell phone because it can integrate with sms, different messengers, and even email. It's great because it can be accessed from pretty much anywhere.
+
+The solution below is a simple example of a web chat bot that gives family law information on divorces and separation.
 
 <div class="video-container">
     <iframe src="https://api.motion.ai/webchat/72000?color=3588eb&sendBtn=SEND&inputBox=Type%20something...&token=3495dc0228d1912e80f4d40ad1ffcb65" height="315" width="560" allowfullscreen="" frameborder="0">

@@ -20,6 +20,6 @@ The **Random Access Memory** (RAM) can be thought of as the stove-top and counte
 
 ![counter](/images/article2/counter.jpeg)
 
-The **Hard Drive** is similar to the refrigerator in the kitchen where all of the ingredients (files) are kept. Whenever an ingredient is needed, the chef can search the refrigerator and retrieve it. If there i’snt enough space in the refrigerator, then the chef can decide to install another one or throw out some of the existing ingredients to make more room.
+The **Hard Drive** is similar to the refrigerator in the kitchen where all of the ingredients (files) are kept. Whenever an ingredient is needed, the chef can search the refrigerator and retrieve it. If there isn't enough space in the refrigerator, then the chef can decide to install another one or throw out some of the existing ingredients to make more room.
 
 ![fridge](/images/article2/fridge.jpg)
