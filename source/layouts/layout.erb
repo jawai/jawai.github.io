@@ -7,11 +7,10 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="twitter:card" content="summary">
       <meta name="twitter:site" content="@jasonawai">
-      <meta name="twitter:url" content="https://www.jasonwai.com/">
       <meta name="twitter:title" content="Jason Wai">
       <meta name="twitter:description" content="On Law, Privacy, and Technology">
       <meta name="twitter:image" content="https://www.jasonwai.com/images/me.jpg">
-    <!-- Use the title from a page's frontmatter if it has one-->
+    <!-- Use the title from a page's frontmatter if it has one <meta name="twitter:url" content="https://www.jasonwai.com/">-->
     <link rel="shortcut icon" href="/images/magic_unicorn.ico" />
     <title><%= current_page.data.title || "Jason Wai" %></title>
     <!-- Fonts for body copy PM Caecilia - Arvo-->
@@ -22,13 +21,12 @@
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <!-- Include jQuery -->
     <%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" %>
-    <!-- Include Bulma -->
-    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" %>
     <!-- Include Font Awesome -->
     <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "main" %>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
-    <%= javascript_include_tag "bulma" %>
+    <%= javascript_include_tag "main" %>
   </head>
   <body>
     <%= partial "header" %>
